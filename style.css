@@ -1,374 +1,181 @@
-/* Reset e Estilos Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-}
-
-.btn {
-    display: inline-block;
-    background: #4b6cc1;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.btn:hover {
-    background: #3a5ba5;
-}
-
-.section {
-    padding: 80px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 32px;
-    color: #333;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: #4b6cc1;
-}
-
-.bg-light {
-    background-color: #f9f9f9;
-}
-
-/* Header */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #4b6cc1;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 30px;
-}
-
-nav ul li a {
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #4b6cc1;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1920/1080') no-repeat center center/cover;
-    color: #fff;
-    padding: 150px 0;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Sobre Section */
-.section-content {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-text p {
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-/* Serviços Section */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.service-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.service-icon {
-    font-size: 40px;
-    color: #4b6cc1;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-/* Contato Section */
-.contact-container {
-    display: flex;
-    gap: 50px;
-}
-
-.contact-info, .contact-form {
-    flex: 1;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.contact-item i {
-    font-size: 24px;
-    color: #4b6cc1;
-    margin-right: 15px;
-    width: 40px;
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #4b6cc1;
-    outline: none;
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-/* Footer */
-footer {
-    background: #222;
-    color: #fff;
-    padding: 60px 0 20px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.footer-logo, .footer-links, .footer-social {
-    flex: 1;
-}
-
-.footer-logo h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #4b6cc1;
-}
-
-.footer-links h4, .footer-social h4 {
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-    color: #ccc;
-    transition: color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-    color: #fff;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    display: inline-block;
-    color: #fff;
-    background: #333;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: background 0.3s ease;
-}
-
-.social-icons a:hover {
-    background: #4b6cc1;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        flex-direction: column;
-        text-align: center;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+// Esperar o DOM ser completamente carregado
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll para links de navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            
+            // Se o link for apenas "#", rolamos para o topo
+            if (targetId === '#') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                return;
+            }
+            
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Calcular posição do elemento considerando o header fixo
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Menu responsivo - Adicionar botão de menu para mobile
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    
+    // Criar botão de menu
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-toggle');
+    menuButton.innerHTML = `<span></span><span></span><span></span>`;
+    menuButton.setAttribute('aria-label', 'Menu');
+    
+    // Adicionar botão apenas em telas pequenas via JavaScript
+    if (window.innerWidth <= 768) {
+        header.querySelector('.container').insertBefore(menuButton, nav);
+        
+        // Adicionar classe para esconder o menu inicialmente
+        nav.classList.add('nav-hidden');
+        
+        // Adicionar funcionalidade de toggle no botão
+        menuButton.addEventListener('click', function() {
+            nav.classList.toggle('nav-visible');
+            nav.classList.toggle('nav-hidden');
+            menuButton.classList.toggle('active');
+        });
     }
     
-    nav ul.show {
-        display: flex;
+    // Ajustar menu em resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 768) {
+            if (!document.querySelector('.menu-toggle')) {
+                header.querySelector('.container').insertBefore(menuButton, nav);
+                nav.classList.add('nav-hidden');
+            }
+        } else {
+            if (document.querySelector('.menu-toggle')) {
+                document.querySelector('.menu-toggle').remove();
+                nav.classList.remove('nav-hidden');
+                nav.classList.remove('nav-visible');
+            }
+        }
+    });
+    
+    // Adicionar estilo CSS dinamicamente para o menu móvel
+    const style = document.createElement('style');
+    style.textContent = `
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 30px;
+                height: 22px;
+            }
+            
+            .menu-toggle span {
+                height: 3px;
+                width: 100%;
+                background-color: #333;
+                border-radius: 3px;
+                transition: all 0.3s ease;
+            }
+            
+            .menu-toggle.active span:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+            
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .menu-toggle.active span:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+            
+            nav {
+                width: 100%;
+            }
+            
+            nav.nav-hidden {
+                display: none;
+            }
+            
+            nav.nav-visible {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Efeito de revelação para os artigos ao rolar
+    const revealElements = document.querySelectorAll('.article-card');
+    
+    function checkReveal() {
+        for (let i = 0; i < revealElements.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = revealElements[i].getBoundingClientRect().top;
+            const elementVisible = 150; // Distância em que o elemento começa a aparecer
+            
+            if (elementTop < windowHeight - elementVisible) {
+                revealElements[i].classList.add('active');
+            }
+        }
     }
     
-    nav ul li {
-        margin: 0;
-        padding: 15px 0;
-        border-bottom: 1px solid #eee;
-    }
+    // Adicionar animação CSS para os artigos
+    const animationStyle = document.createElement('style');
+    animationStyle.textContent = `
+        .article-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .article-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+    document.head.appendChild(animationStyle);
     
-    .menu-toggle {
-        display: block;
-    }
+    // Checar se há elementos para revelar ao carregar a página
+    window.addEventListener('scroll', checkReveal);
     
-    .section-content {
-        flex-direction: column;
-    }
-    
-    .contact-container {
-        flex-direction: column;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-}
+    // Chamar uma vez na inicialização
+    checkReveal();
+});
 
-@media (max-width: 576px) {
-    .hero-content h2 {
-        font-size: 36px;
-    }
-    
-    .section-title {
-        font-size: 28px;
-    }
-}
+/* 
+ * ÁREA PARA ADICIONAR MAIS FUNÇÕES JAVASCRIPT
+ * Aqui você pode adicionar animações, carregamento de dados, 
+ * filtros para categorias de artigos, etc.
+ */
