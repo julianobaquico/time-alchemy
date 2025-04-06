@@ -1,161 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Alchemy</title>
-    <!-- Conexão com o arquivo CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fontes do Google (opcional, mas recomendado para melhor aparência) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Meu Site Moderno</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">Time Alchemy.</a></h1>
-            </div>
+            <h1>Meu Site</h1>
             <nav>
                 <ul>
-                    <li><a href="#rotinas">Rotinas e Hábitos</a></li>
-                    <li><a href="#ferramentas">Ferramentas e Apps</a></li>
-                    <li><a href="#tecnicas">Técnicas e Hacks</a></li>
-                    <li><a href="#estudos">Estudos e Casos</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Transforme seu tempo em resultados extraordinários</h2>
-                    <p>Descubra estratégias práticas, ferramentas e métodos comprovados para otimizar seu tempo e alcançar produtividade máxima.</p>
-                    <a href="#comecar" class="btn">Comece Agora</a>
-                </div>
-            </div>
+            <h2>Bem-vindo ao Nosso Site</h2>
+            <p>Uma solução completa para suas necessidades digitais.</p>
+            <button id="cta-button">Saiba Mais</button>
         </section>
 
-        <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
-        <!-- Aqui você pode adicionar as diferentes seções de conteúdo -->
-        
-        <!-- INÍCIO: Seção de Rotinas e Hábitos -->
-        <section id="rotinas" class="content-section">
-            <div class="container">
-                <h2>Rotinas e Hábitos</h2>
-                <div class="articles-grid">
-                    <!-- AQUI VOCÊ PODE ADICIONAR ARTIGOS SOBRE ROTINAS -->
-                    <!-- Exemplo de artigo: -->
-                    <article class="article-card">
-                        <img src="placeholder-rotina.jpg" alt="Rotina matinal">
-                        <h3>Como criar uma rotina matinal produtiva</h3>
-                        <p>Descubra os passos para criar uma rotina matinal que impulsiona sua produtividade durante todo o dia.</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </article>
-                    <!-- FIM DO EXEMPLO -->
-                </div>
+        <section class="features">
+            <div class="feature">
+                <h3>Design Responsivo</h3>
+                <p>Nosso site se adapta a qualquer dispositivo.</p>
+            </div>
+            <div class="feature">
+                <h3>Performance</h3>
+                <p>Carregamento rápido e eficiente.</p>
+            </div>
+            <div class="feature">
+                <h3>Segurança</h3>
+                <p>Proteção de dados garantida.</p>
             </div>
         </section>
-        <!-- FIM: Seção de Rotinas e Hábitos -->
-
-        <!-- INÍCIO: Seção de Ferramentas e Apps -->
-        <section id="ferramentas" class="content-section">
-            <div class="container">
-                <h2>Ferramentas e Apps</h2>
-                <div class="articles-grid">
-                    <!-- AQUI VOCÊ PODE ADICIONAR ARTIGOS SOBRE FERRAMENTAS -->
-                    <!-- Exemplo de artigo: -->
-                    <article class="article-card">
-                        <img src="placeholder-ferramenta.jpg" alt="Apps de produtividade">
-                        <h3>Os 5 melhores apps para gestão de tempo</h3>
-                        <p>Conheça as ferramentas digitais que vão revolucionar a forma como você administra suas tarefas diárias.</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </article>
-                    <!-- FIM DO EXEMPLO -->
-                </div>
-            </div>
-        </section>
-        <!-- FIM: Seção de Ferramentas e Apps -->
-
-        <!-- INÍCIO: Seção de Técnicas e Hacks -->
-        <section id="tecnicas" class="content-section">
-            <div class="container">
-                <h2>Técnicas e Hacks</h2>
-                <div class="articles-grid">
-                    <!-- AQUI VOCÊ PODE ADICIONAR ARTIGOS SOBRE TÉCNICAS -->
-                    <!-- Exemplo de artigo: -->
-                    <article class="article-card">
-                        <img src="placeholder-tecnica.jpg" alt="Técnica Pomodoro">
-                        <h3>Dominando a técnica Pomodoro</h3>
-                        <p>Aprenda a aplicar este método de gestão de tempo que pode multiplicar sua concentração e eficiência.</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </article>
-                    <!-- FIM DO EXEMPLO -->
-                </div>
-            </div>
-        </section>
-        <!-- FIM: Seção de Técnicas e Hacks -->
-
-        <!-- INÍCIO: Seção de Estudos e Casos -->
-        <section id="estudos" class="content-section">
-            <div class="container">
-                <h2>Estudos e Casos</h2>
-                <div class="articles-grid">
-                    <!-- AQUI VOCÊ PODE ADICIONAR ARTIGOS SOBRE ESTUDOS DE CASO -->
-                    <!-- Exemplo de artigo: -->
-                    <article class="article-card">
-                        <img src="placeholder-estudo.jpg" alt="Estudo de caso">
-                        <h3>Como Maria ganhou 2 horas por dia</h3>
-                        <p>Estudo de caso: Descubra as mudanças simples que permitiram a uma executiva recuperar tempo valioso em sua rotina.</p>
-                        <a href="#" class="read-more">Ler mais</a>
-                    </article>
-                    <!-- FIM DO EXEMPLO -->
-                </div>
-            </div>
-        </section>
-        <!-- FIM: Seção de Estudos e Casos -->
-
-        <!-- ÁREA PARA ADICIONAR OUTRAS SEÇÕES -->
-        <!-- Você pode adicionar outras seções aqui conforme necessário -->
-
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Time Alchemy.</h2>
-                    <p>Transformando tempo em resultados.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Conteúdo</h3>
-                        <ul>
-                            <li><a href="#rotinas">Rotinas e Hábitos</a></li>
-                            <li><a href="#ferramentas">Ferramentas e Apps</a></li>
-                            <li><a href="#tecnicas">Técnicas e Hacks</a></li>
-                            <li><a href="#estudos">Estudos e Casos</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Sobre</h3>
-                        <ul>
-                            <li><a href="#about">Quem Somos</a></li>
-                            <li><a href="#contact">Contato</a></li>
-                            <li><a href="#privacy">Política de Privacidade</a></li>
-                            <li><a href="#terms">Termos de Uso</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Time Alchemy. Todos os direitos reservados.</p>
-            </div>
+            <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Conexão com o arquivo JavaScript -->
-    <script src="script.js"></script>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="scripts/script.js"></script>
 </body>
 </html>
